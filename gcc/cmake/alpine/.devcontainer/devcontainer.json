@@ -1,0 +1,19 @@
+{
+    "name": "gcc-cmake-dev",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "gcc-cmake-dev",
+    "workspaceFolder": "/WORKDIR",
+    "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "danielpinto8zz6.c-cpp-project-generator",
+        "austin.code-gnu-global",
+        "ajshort.include-autocomplete",
+        "cschlosser.doxdocgen",
+        "jeff-hykin.better-cpp-syntax",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "oderwat.indent-rainbow"
+    ]
+}
