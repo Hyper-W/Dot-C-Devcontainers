@@ -5,14 +5,17 @@
     ],
     "service": "gcc-ncurses-dev",
     "workspaceFolder": "/WORKDIR",
-    "extensions": [
-        "ms-vscode.cpptools-extension-pack",
-        "danielpinto8zz6.c-cpp-project-generator",
-        "austin.code-gnu-global",
-        "ajshort.include-autocomplete",
-        "cschlosser.doxdocgen",
-        "jeff-hykin.better-cpp-syntax",
-        "MS-CEINTL.vscode-language-pack-ja",
-        "oderwat.indent-rainbow"
-    ]
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "danielpinto8zz6.c-cpp-project-generator",
+                "austin.code-gnu-global",
+                "ajshort.include-autocomplete",
+                "cschlosser.doxdocgen",
+                "jeff-hykin.better-cpp-syntax",
+                "oderwat.indent-rainbow"
+            ]
+        }
+    }
 }
