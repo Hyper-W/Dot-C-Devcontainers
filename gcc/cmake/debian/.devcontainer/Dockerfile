@@ -1,4 +1,6 @@
-FROM debian:stable-slim
+ARG DEBIAN_VERSION_NAME=stable
+
+FROM debian:${DEBIAN_VERSION_NAME}-slim
 
 # Your Property
 ARG USER=user
