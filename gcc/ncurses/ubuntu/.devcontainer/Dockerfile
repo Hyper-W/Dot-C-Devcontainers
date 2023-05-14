@@ -1,13 +1,13 @@
-ARG DEBIAN_VERSION_NAME=stable
+ARG UBUNTU_VERSION_NAME=latest
 
-FROM debian:${DEBIAN_VERSION_NAME}-slim
+FROM ubuntu:${UBUNTU_VERSION_NAME}
 
 # Your Property
 ARG USER=user
 ARG USER_ID=1000
 ARG GROUP_ID=1000
 
-RUN apt-get update && apt-get install -y --no-install-recommends gcc gdb libc-dev sudo \
+RUN apt-get update && apt-get install -y --no-install-recommends gcc gdb libc-dev libncursesw5-dev sudo \
     && apt-get remove -y --autoremove --purge wget && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && groupadd -g ${GROUP_ID} ${USER} \
     && useradd -u ${USER_ID} -m -s /bin/bash -g ${USER} -G sudo ${USER} \

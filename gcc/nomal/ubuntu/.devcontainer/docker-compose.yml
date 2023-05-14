@@ -1,17 +1,17 @@
 services:
-  gcc-make-dev:
+  gcc-dev:
     build:
       context: .
       args:
         - USER=${USER:-user} # Your User Name
         - USER_ID=${USER_ID:-1000} # Your User ID
         - GROUP_ID=${GROUP_ID:-1000} # Your GROUP ID
-        - ALPINE_VERSION_NAME=${ALPINE_VERSION_NAME:-latest} # alpine code name
-    image: gcc-make-dev:alpine
-    container_name: gcc-make-dev
+        - UBUNTU_VERSION_NAME=${UBUNTU_VERSION_NAME:-latest} # ubuntu code name
+    image: gcc-dev:ubuntu
+    container_name: gcc-dev
     volumes:
       - type: bind
         source: ../
         target: /WORKDIR
     tty: true
-    command: sh
+    command: bash
