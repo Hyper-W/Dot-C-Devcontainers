@@ -11,11 +11,9 @@
                 "ms-vscode.cpptools-extension-pack",
                 "ms-vscode.cmake-tools",
                 "danielpinto8zz6.c-cpp-project-generator",
-                "austin.code-gnu-global",
                 "ajshort.include-autocomplete",
                 "cschlosser.doxdocgen",
-                "jeff-hykin.better-cpp-syntax",
-                "oderwat.indent-rainbow"
+                "jeff-hykin.better-cpp-syntax"
             ]
         }
     }
